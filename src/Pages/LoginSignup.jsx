@@ -24,7 +24,7 @@ const LoginSignup = () => {
   };
 
   const login = async () => {
-    const response = await fetch("http://44.201.85.252/login", {
+    const response = await fetch("http://18.234.167.23/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -42,7 +42,7 @@ const LoginSignup = () => {
   };
 
   const signup = async () => {
-    const response = await fetch("http://44.201.85.252/signup", {
+    const response = await fetch("http://18.234.167.23/signup", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -60,7 +60,7 @@ const LoginSignup = () => {
   };
 
   const requestOtp = async () => {
-    const response = await fetch("http://44.201.85.252/requestotp", {
+    const response = await fetch("http://18.234.167.23/requestotp", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -78,7 +78,7 @@ const LoginSignup = () => {
   };
 
   const resetPassword = async () => {
-    const response = await fetch("http://44.201.85.252/resetpassword", {
+    const response = await fetch("http://18.234.167.23/resetpassword", {
       method: "POST",
       headers: {
         Accept: "application/json",

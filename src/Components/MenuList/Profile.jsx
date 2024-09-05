@@ -20,7 +20,7 @@ const Profile = () => {
 
   const fetchAccountDetails = async () => {
     try {
-      const response = await fetch("http://44.201.85.252/accountdetails", {
+      const response = await fetch("http://18.234.167.23/accountdetails", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const Profile = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://44.201.85.252/account", {
+      const response = await fetch("http://18.234.167.23/account", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

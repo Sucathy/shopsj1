@@ -34,7 +34,7 @@ const AddNewAddress = () => {
 
   const fetchAccountDetails = async () => {
     try {
-      const response = await fetch("http://44.201.85.252/addressdetails", {
+      const response = await fetch("http://18.234.167.23/addressdetails", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const AddNewAddress = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://44.201.85.252/address", {
+      const response = await fetch("http://18.234.167.23/address", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -127,7 +127,7 @@ const AddNewAddress = () => {
   const handleDelete = async (addressId) => {
     try {
       const response = await fetch(
-        `http://44.201.85.252/address/${addressId}`,
+        `http://18.234.167.23/address/${addressId}`,
         {
           method: "DELETE",
           headers: {

@@ -131,7 +131,7 @@ export default function Tracking() {
     const fetchOrderDetails = async () => {
       try {
         const response = await fetch(
-          `http://44.201.85.252/orderdetails/${orderId}`,
+          `http://18.234.167.23/orderdetails/${orderId}`,
           {
             method: "GET",
             headers: {
