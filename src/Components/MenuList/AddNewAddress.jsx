@@ -34,7 +34,7 @@ const AddNewAddress = () => {
 
   const fetchAccountDetails = async () => {
     try {
-      const response = await fetch("http://18.234.167.23/addressdetails", {
+      const response = await fetch("http://3.86.217.225/addressdetails", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const AddNewAddress = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://18.234.167.23/address", {
+      const response = await fetch("http://3.86.217.225/address", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -126,16 +126,13 @@ const AddNewAddress = () => {
 
   const handleDelete = async (addressId) => {
     try {
-      const response = await fetch(
-        `http://18.234.167.23/address/${addressId}`,
-        {
-          method: "DELETE",
-          headers: {
-            "Content-Type": "application/json",
-            "auth-token": localStorage.getItem("auth-token") || "",
-          },
-        }
-      );
+      const response = await fetch(`http://3.86.217.225/address/${addressId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "auth-token": localStorage.getItem("auth-token") || "",
+        },
+      });
 
       if (!response.ok) {
         throw new Error("Failed to delete address");

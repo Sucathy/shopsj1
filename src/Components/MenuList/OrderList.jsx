@@ -24,7 +24,7 @@ const OrderList = ({ userId }) => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch(`http://18.234.167.23/orderdetails`, {
+        const response = await fetch(`http://3.86.217.225/orderdetails`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

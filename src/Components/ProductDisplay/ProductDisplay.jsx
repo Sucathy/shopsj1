@@ -18,7 +18,7 @@ const ProductDisplay = (props) => {
   useEffect(() => {
     const fetchInfo = async () => {
       try {
-        const res = await fetch("http://18.234.167.23/newcollections");
+        const res = await fetch("http://3.86.217.225/newcollections");
         const data = await res.json();
         setNewCollection(data);
       } catch (error) {

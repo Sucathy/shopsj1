@@ -16,12 +16,12 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch("http://18.234.167.23/allproducts")
+    fetch("http://3.86.217.225/allproducts")
       .then((res) => res.json())
       .then((data) => setProducts(data));
 
     if (localStorage.getItem("auth-token")) {
-      fetch("http://18.234.167.23/getcart", {
+      fetch("http://3.86.217.225/getcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -75,7 +75,7 @@ const ShopContextProvider = (props) => {
     const authToken = localStorage.getItem("auth-token");
 
     if (authToken) {
-      fetch("http://18.234.167.23/addtocart", {
+      fetch("http://3.86.217.225/addtocart", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -111,7 +111,7 @@ const ShopContextProvider = (props) => {
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
     if (localStorage.getItem("auth-token")) {
-      fetch("http://18.234.167.23/removefromcart", {
+      fetch("http://3.86.217.225/removefromcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
@@ -130,7 +130,7 @@ const ShopContextProvider = (props) => {
   const clearCart = () => {
     setCartItems(getDefaultCart());
     if (localStorage.getItem("auth-token")) {
-      fetch("http://18.234.167.23/clearcart", {
+      fetch("http://3.86.217.225/clearcart", {
         method: "POST",
         headers: {
           Accept: "application/form-data",
