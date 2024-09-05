@@ -1,0 +1,27 @@
+.OfferZone {
+  background-color: black; /* Background color black */
+  color: white; /* Text color white */
+  width: 100%; /* Full width */
+  padding: 10px; /* Some padding */
+  overflow: hidden; /* Hide overflow */
+  height: 22px;
+  position: relative; /* Position relative for child absolute positioning */
+}
+
+.OfferZone .movie {
+  position: absolute; /* Absolute positioning */
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: moveMovie 30s linear infinite; /* Animation applied */
+}
+
+@keyframes moveMovie {
+  0% {
+    transform: translateX(100%); /* Start outside on the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to outside on the left */
+  }
+}
+.popular {
+  width: 100%;
+}

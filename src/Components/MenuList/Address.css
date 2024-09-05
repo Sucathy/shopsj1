@@ -1,0 +1,152 @@
+/* Adjustments to existing styles for better consistency */
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.saved-address {
+  width: 1000px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  justify-self: start;
+}
+.menu_listcard {
+  width: 20%;
+  margin: 0;
+  border-radius: 3px;
+  border: 2px solid #ccc;
+  font-size: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu_listcard hr.hrrr {
+  margin: 10px 0;
+}
+
+.card-content {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  width: 60%;
+  background-color: #f9f9f9;
+}
+
+.card-content.active {
+  display: block;
+  width: 50%;
+  font-size: 25px;
+  margin-left: 25px;
+}
+
+input,
+select,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form_input {
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.account-page,
+.address-page,
+.contact-pages,
+.order-page {
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+}
+
+.account_details,
+.address_details,
+.contact_detailss,
+.order_details {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  border: 3px solid #000000;
+  justify-content: center;
+  margin: 10% 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .menu_listcard {
+    width: 80%;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .card-content.active {
+    width: 90%;
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .account-page,
+  .address-page,
+  .contact-pages,
+  .order-page {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .account_details,
+  .address_details,
+  .contact_detailss,
+  .order_details {
+    margin: 5% 0;
+  }
+
+  .form_input {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu_listcard {
+    display: none; /* Hide menu list on mobile devices */
+  }
+
+  .card-content.active {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .account-page,
+  .address-page,
+  .contact-pages,
+  .order-page {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .account_details,
+  .address_details,
+  .contact_detailss,
+  .order_details {
+    margin: 5% 0;
+  }
+
+  .form_input {
+    width: 100%;
+    margin-left: 0;
+  }
+}

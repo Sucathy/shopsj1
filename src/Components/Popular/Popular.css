@@ -1,0 +1,95 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 1280px;
+  margin: auto;
+}
+.popular h1 {
+  color: #171717;
+  font-size: 40px;
+  font-weight: 600;
+}
+.popular hr {
+  width: 150px;
+  height: 4px;
+  border-radius: 10px;
+  background: #252525;
+}
+.popular-item {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+/* ---------- media query------------ */
+
+@media (max-width: 800px) {
+  .popular h1 {
+    font-size: 30px;
+  }
+  .popular hr {
+    width: 80px;
+    height: 4px;
+  }
+}
+.itemcards {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next row if the items overflow */
+  gap: 20px; /* Space between cards */
+  justify-content: space-around; /* Adjusts spacing around items */
+  padding: 20px;
+}
+
+.item-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; /* Adjust the width as needed */
+  margin: 10px; /* Space between cards */
+  transition: transform 0.3s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.item-card img {
+  width: 400px;
+  height: 400px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.item-card .item-details {
+  padding: 15px;
+}
+
+.item-card .item-details h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.item-card .item-details p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.item-card .item-prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-card .item-prices .new-price {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.item-card .item-prices .old-price {
+  color: #aaa;
+  text-decoration: line-through;
+}

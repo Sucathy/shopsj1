@@ -1,0 +1,55 @@
+/* General Styles */
+.shipping-policy-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.shipping-policy-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.shipping-policy-container h2 {
+  color: #1a1e31;
+  margin-bottom: 10px;
+  font-family: "familySemiBold", sans-serif;
+}
+
+.shipping-policy-container p {
+  color: #666875;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.shipping-policy-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.shipping-policy-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shipping-policy-container {
+    padding: 10px;
+  }
+
+  .shipping-policy-container h1 {
+    font-size: 24px;
+  }
+
+  .shipping-policy-container h2 {
+    font-size: 18px;
+  }
+
+  .shipping-policy-container p {
+    font-size: 14px;
+  }
+}

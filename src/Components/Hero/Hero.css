@@ -1,0 +1,173 @@
+/* General Container Styling */
+.website-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.boxofview {
+  width: 100%;
+}
+.list_catcategory {
+  flex-direction: column;
+  display: none; /* Hide by default on larger screens */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if they exceed container width */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: flex-start; /* Align items to the start of the container */
+  list-style: none; /* Remove bullet points or any default list styles */
+  gap: 5px; /* Add space between items (adjust as needed) */
+  color: #000000; /* Set text color */
+  font-size: 9px; /* Set font size */
+  font-weight: 900; /* Set font weight for bold text */
+  padding: 10px; /* Add padding inside the container */
+}
+
+.list_catcategory li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.list_catcategory img {
+  width: 85px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+/* Hero Container Styling */
+.hero-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-left {
+  max-width: 50%;
+}
+
+.hero-left h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-latest-btn {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+  background-color: #333;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Ensure the hero-right image adjusts correctly on smaller screens */
+  .hero-right img {
+    max-width: 100%; /* Reduce the image size to fit better on tablets */
+    height: auto;
+  }
+
+  .listproduct-product-icon {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 740px;
+    height: auto;
+    margin-left: 10px;
+    flex-direction: column;
+  }
+
+  /* Show category list on tablets and below */
+  .list_catcategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribute items evenly */
+    padding: 10px;
+    background-color: #f0f0f0;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .hero-latest-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .boxofview {
+    width: 100%;
+  }
+  .hero {
+    padding: 20px;
+  }
+
+  /* Further reduce the hero-right image size on mobile */
+  .hero-right img {
+    max-width: 80%; /* Further reduce the image size for mobile screens */
+    height: auto;
+    margin: 0 auto; /* Center the image on mobile */
+  }
+
+  /* Adjust the product images for mobile */
+  .listproduct-product-icon {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 360px;
+    max-height: 120px;
+    justify-items: center;
+  }
+
+  /* Ensure category list is mobile-friendly */
+  .list_catcategory {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .list_catcategory li {
+    margin-bottom: 10px;
+  }
+
+  .list_catcategory img {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+  }
+
+  .list_catcategory h3 {
+    font-size: 12px;
+    margin-left: 19px;
+  }
+}

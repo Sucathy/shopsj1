@@ -1,0 +1,54 @@
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-logo p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.MuiAccordionSummary-root {
+  background-color: #000000;
+  padding: 10px;
+}
+
+.MuiAccordionDetails-root {
+  background-color: #000000;
+  padding: 10px;
+}
+.footer-social-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  margin-top: 20px; /* Add some space above the icons */
+}
+
+.footer-icons-container {
+  margin: 0 10px; /* Add space between the icons */
+  transition: transform 0.3s ease; /* Smoothly scale icons on hover */
+}
+
+.footer-icons-container a {
+  display: inline-block; /* Ensure the link wraps around the icon */
+}
+
+.footer-icons-container img {
+  width: 40px; /* Set a fixed width for the icons */
+  height: 40px; /* Set a fixed height for the icons */
+  object-fit: contain; /* Ensure the icon image scales nicely */
+}
+
+.footer-icons-container:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.footer-social-icons a img {
+  filter: brightness(0) invert(1); /* Make the icons white for dark backgrounds */
+}
+
+.footer-social-icons a img:hover {
+  filter: brightness(1); /* Return to original color on hover */
+}

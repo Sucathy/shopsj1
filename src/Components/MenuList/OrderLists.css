@@ -1,0 +1,98 @@
+.order-list-page {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.order-list-details {
+  flex: 1;
+  padding: 20px;
+  /* background-color: #ffffff; */
+  /* border-radius: 8px; */
+}
+
+.order-list-details h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.order-list-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.order-list-details li {
+  /* background-color: #fff; */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  /* border-radius: 8px; */
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+.order-list-details li:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.01); /* Slightly enlarge the item on hover */
+}
+
+.order-products img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.order-products ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.order-products h2 {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  /* Mobile Styles */
+  .order-list-page {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .order-list-details {
+    padding: 1px; /* Minimal padding */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease,
+      transform 0.3s ease;
+  }
+  .order-list-details:hover {
+    background-color: #f0f0f0; /* Light background color on hover */
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: scale(1.02); /* Slightly enlarge the element on hover */
+  }
+
+  .order-list-details h1 {
+    font-size: 1.5em;
+  }
+  .order-products {
+    width: 290px;
+  }
+  .order-products ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .order-products img {
+    max-width: 100%px;
+    height: auto;
+  }
+
+  .order-list-details li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,59 @@
+/* Ensure all styles are scoped to the ReturnExchange component */
+.return-exchange-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.return-exchange-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.return-exchange-container h2,
+.return-exchange-container h3 {
+  color: #1a1e31;
+  margin-bottom: 10px;
+  font-family: "familySemiBold", sans-serif;
+}
+
+.return-exchange-container p {
+  color: #666875;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.return-exchange-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #666875;
+}
+
+.return-exchange-container .section {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .return-exchange-container {
+    padding: 10px;
+  }
+
+  .return-exchange-container h1 {
+    font-size: 24px;
+  }
+
+  .return-exchange-container h2,
+  .return-exchange-container h3 {
+    font-size: 18px;
+  }
+
+  .return-exchange-container p,
+  .return-exchange-container ul {
+    font-size: 14px;
+  }
+}

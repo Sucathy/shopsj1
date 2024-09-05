@@ -1,0 +1,227 @@
+.descriptionbox {
+  margin: 120px 170px;
+}
+.descriptionbox-navigator {
+  display: flex;
+}
+.descriptionbox-nav-box {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 40%;
+  height: 70px;
+  border: 2px solid #443a3a;
+  background-color: #000000;
+  cursor: pointer;
+  transition: "border 0.3s ease";
+}
+.descriptionbox-nav-box.fade {
+  background: #5a5555;
+  color: #822f2f;
+}
+.descriptionbox-description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 1px solid #8a1d1d;
+  padding: 48px;
+  padding-bottom: 70px;
+}
+@media (max-width: 1280px) {
+  .descriptionbox {
+    margin: 60px 60px;
+  }
+}
+@media (max-width: 1280px) {
+  .descriptionbox {
+    margin: 60px 20px;
+  }
+  .descriptionbox-description {
+    font-size: 14px;
+  }
+}
+
+/* product details  */
+.product-details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-details-list li {
+  margin-bottom: 10px;
+}
+
+.label {
+  display: inline-block;
+  width: 150px; /* Adjust as needed */
+  font-weight: bold;
+}
+
+.value {
+  display: inline-block;
+}
+
+.label {
+  font-weight: bold;
+  color: #878787;
+  font-size: 18px; /* Adjust the size as needed */
+}
+
+/* FlipkartStyleReviews.css */
+
+.reviews-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.reviews-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.reviews-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  vertical-align: 0%;
+  width: 50%;
+  height: 50%;
+}
+
+.write-review {
+  margin-top: 20px;
+}
+
+.review-input {
+  width: 70%;
+  height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 5px;
+}
+
+.submit-review-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 30%;
+}
+
+.submit-review-btn:hover {
+  background-color: #0056b3;
+}
+
+/* DescriptionBox.css */
+/* DescriptionBox.css */
+/* DescriptionBox.css */
+
+.review-item img {
+  max-width: 100px; /* Adjust as needed */
+  max-height: 100px; /* Adjust as needed */
+  margin-right: 10px; /* Optional: Add margin between image and text */
+}
+
+.shipping-info {
+  text-align: left;
+  margin-top: 30px; /* Adjust margin as needed */
+}
+
+.shipping-info h2 {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 10px;
+  color: #333; /* Adjust margin as needed */
+}
+
+.shipping-info-content {
+  font-size: 18px; /* Adjust font size as needed */
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.shipping-info-content p {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+.shipping-header {
+  color: rgb(52, 133, 52);
+}
+
+/* ShippingInfo.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  color: #224f5a;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-container {
+  background-color: #bcb5b5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.title {
+  color: #ede7e7;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.strong {
+  color: #2a3c43;
+}
+
+/* ReturnAndExchangePolicy.css */
+
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.strong {
+  color: #7d8083;
+}

@@ -1,0 +1,72 @@
+/* Website.css */
+.website-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.listproduct {
+  margin: auto;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listproduct h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.listproduct-allproducts {
+  margin-top: 20px;
+}
+
+.listproduct-format {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.listproduct-product-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.listproduct-product-icons img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 5px;
+  border-radius: 4px;
+}
+
+.listproduct-product-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.listproduct p {
+  margin: 0;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}

@@ -1,0 +1,157 @@
+.menu-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.menu-listcard {
+  width: 200px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.menu-listcard img {
+  width: 20px;
+  margin-left: 3px;
+  margin-right: 14px;
+}
+.menu-listcard a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-listcard a:hover {
+  background-color: #e0e0e0;
+}
+
+.hrrr {
+  border: 0;
+  border-top: 1px solid #343434;
+  margin: 5px 0;
+}
+
+.card-container {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.card-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-content.active {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact_detailes_list {
+  margin: 30px;
+  font-size: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .menu-page {
+    display: none;
+  }
+  .menu-listcard {
+    width: 80%;
+    font-size: 20px;
+    /* padding: 5px; */
+    display: none;
+  }
+
+  .card-content.active {
+    width: 90%;
+    font-size: 20px;
+    margin-left: 0;
+    display: hide;
+    background-color: aqua;
+  }
+
+  .account-page,
+  .address-page,
+  .contact-pages,
+  .order-page {
+    width: 30%;
+    margin-left: 5%;
+    margin: 5%;
+  }
+
+  .account_details,
+  .address_details,
+  .contact_detailss,
+  .order_details {
+    margin: 5%;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 90%;
+    margin: 5px;
+  }
+
+  .form_input {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  div .menumenu-page {
+    display: hide;
+    background-color: aqua;
+  }
+  .menu_listcard {
+    display: hide;
+    background-color: aqua; /* Hide menu list on mobile devices */
+  }
+
+  .card-content.active {
+    width: 100%;
+    font-size: 18px;
+    margin-left: 0;
+    background-color: aqua;
+  }
+
+  .account-page,
+  .address-page,
+  .contact-pages,
+  .order-page {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .account_details,
+  .address_details,
+  .contact_detailss,
+  .order_details {
+    margin: 5% 0;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  .form_input {
+    width: 100%;
+    margin-left: 0;
+  }
+}
