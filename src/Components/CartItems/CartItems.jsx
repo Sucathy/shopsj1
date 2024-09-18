@@ -91,7 +91,7 @@ const CartItems = () => {
         return;
       }
 
-      const response = await fetch("http://3.86.217.225/order", {
+      const response = await fetch("http://localhost:4000/order", {
         method: "POST",
         body: JSON.stringify({
           amount: totalCartAmount * 100, // Amount should be in the smallest unit (e.g., paise for INR)
@@ -117,7 +117,7 @@ const CartItems = () => {
         key: "rzp_test_4qWBysCOWmcNPo", // Replace with your Razorpay Key ID
         amount: order.order.amount,
         currency: order.order.currency,
-        name: "Your Company Name",
+        name: "ShopSj",
         description: "Test Transaction",
         order_id: order.order.orderId,
         handler: async function (response) {
@@ -131,7 +131,7 @@ const CartItems = () => {
             };
 
             const validateRes = await fetch(
-              "http://3.86.217.225/order/validate",
+              "http://localhost:4000/order/validate",
               {
                 method: "POST",
                 body: JSON.stringify(body),

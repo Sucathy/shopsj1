@@ -19,6 +19,7 @@ import ContactUs from "./Components/NeedHelp/ContactUs";
 import PrivacyPolicy from "./Components/NeedHelp/PrivacyPolicy";
 import ReturnExchanges from "./Components/NeedHelp/ReturnExchanges";
 import ShippingPolicy from "./Components/NeedHelp/ShippingPolicy";
+import UploadImage from "./Components/upload/UploadImage";
 import Website from "./Components/Website/Website";
 import Cart from "./Pages/Cart";
 import LoginSignup from "./Pages/LoginSignup";
@@ -94,6 +95,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/shippingpolicy" element={<ShippingPolicy />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/uploadimage" element={<UploadImage />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,0 +1,66 @@
+/* Container styling for the upload section */
+.uploadimage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Styling for each upload field */
+.uploadimage-itemfield {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+
+/* Styling for the label to look like an upload box */
+.uploadimage-thumbnail-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.uploadimage-thumbnail-img:hover {
+  border-color: #888;
+}
+
+/* Styling for paragraph labels */
+.uploadimage-itemfield p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Styling for the "Add" button */
+.uploadimage-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.uploadimage-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media query to make sure it's responsive on smaller screens */
+@media (max-width: 600px) {
+  .uploadimage-container {
+    width: 100%;
+  }
+
+  .uploadimage-itemfield {
+    width: 90%;
+  }
+}

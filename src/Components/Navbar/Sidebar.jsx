@@ -127,6 +127,16 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               </button>
             </li>
           </Link>
+          {/* <Link to="/uploadimage" style={{ textDecoration: "none" }}>
+            <li>
+              <button
+                className="link-btn"
+                onClick={() => console.log("UploadImage clicked")}
+              >
+                UploadImage
+              </button>
+            </li>
+          </Link> */}
         </ul>
         {/* <Link to="/website" style={{ textDecoration: "none" }}>
           <li>

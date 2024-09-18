@@ -14,7 +14,7 @@ const Shop = () => {
 
   const fetchInfo = () => {
     // Fetch popular products for women
-    fetch("http://3.86.217.225/popularinwomen")
+    fetch("http://localhost:4000/popularinwomen")
       .then((res) => res.json())
       .then((data) => setPopularWomen(data))
       .catch((error) =>
@@ -22,7 +22,7 @@ const Shop = () => {
       );
 
     // Fetch new collections
-    fetch("http://3.86.217.225/newcollections")
+    fetch("http://localhost:4000/newcollections")
       .then((res) => res.json())
       .then((data) => setNewCollection(data))
       .catch((error) =>
@@ -30,7 +30,7 @@ const Shop = () => {
       );
 
     // Fetch popular products for men
-    // fetch("http://3.86.217.225/popularinmen")
+    // fetch("http://localhost:4000/popularinmen")
     //   .then((res) => res.json())
     //   .then((data) => setPopularMen(data))
     //   .catch((error) =>

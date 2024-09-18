@@ -6,7 +6,7 @@ const PopularMen = () => {
 
   // Fetch popular products from the server
   const fetchPopularMenProducts = () => {
-    fetch("http://3.86.217.225/popularinmen")
+    fetch("http://localhost:4000/popularinmen")
       .then((res) => res.json())
       .then((data) => setAllwebProducts(data))
       .catch((error) =>

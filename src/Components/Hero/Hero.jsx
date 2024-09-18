@@ -33,7 +33,7 @@ const Hero = () => {
   };
 
   const fetchInfo = () => {
-    fetch("http://3.86.217.225/allwebproducts")
+    fetch("http://localhost:4000/allwebproducts")
       .then((res) => res.json())
       .then((data) => setAllwebProducts(data))
       .catch((error) => console.error("Error fetching products:", error));

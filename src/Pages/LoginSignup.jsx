@@ -24,7 +24,7 @@ const LoginSignup = () => {
   };
 
   const login = async () => {
-    const response = await fetch("http://3.86.217.225/login", {
+    const response = await fetch("http://localhost:4000/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -42,7 +42,7 @@ const LoginSignup = () => {
   };
 
   const signup = async () => {
-    const response = await fetch("http://3.86.217.225/signup", {
+    const response = await fetch("http://localhost:4000/signup", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -60,7 +60,7 @@ const LoginSignup = () => {
   };
 
   const requestOtp = async () => {
-    const response = await fetch("http://3.86.217.225/requestotp", {
+    const response = await fetch("http://localhost:4000/requestotp", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -78,7 +78,7 @@ const LoginSignup = () => {
   };
 
   const resetPassword = async () => {
-    const response = await fetch("http://3.86.217.225/resetpassword", {
+    const response = await fetch("http://localhost:4000/resetpassword", {
       method: "POST",
       headers: {
         Accept: "application/json",
